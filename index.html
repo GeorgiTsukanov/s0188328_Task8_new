@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>задание 8</title>
+</head>
+<body>
+
+    <button id="open-popup">открыть форму обратной связи</button>
+
+<div id="popup-overlay">
+    <div id="feedback-form">
+        <form class="forms" id="feedback-form-element">
+            <h3>Feedback Form</h3>
+            <input type="text" id="name" name="name" placeholder="полное имя" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="номер телефона" required>
+            <input type="text" id="organization" name="organization" placeholder="организация">
+            <textarea id="message" name="message" rows="4" placeholder="сообщение" required></textarea>
+            <div class="checkbox-container">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Принять согласия на обработку персональных данных</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
